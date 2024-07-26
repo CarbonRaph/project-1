@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-=op23=_za=w5581ww5$q!*7$m7*pa5r)v(s9kx9ece#o%=d^0@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -47,7 +47,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 #     "http://localhost:8080",  # Add the origin of your Flutter app
 #     "http://127.0.0.1:8080",   # Add alternative origin if needed
 # ]
-
+CORS_ALLOW_CREDENTIALS = True
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
