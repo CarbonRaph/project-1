@@ -26,5 +26,6 @@ from django.core.management import execute_from_command_line
 import os
 
 if __name__ == "__main__":
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "backend.settings")
     port = os.getenv('DJANGO_PORT', '8000')  # Default to 8000 if not set
     execute_from_command_line(['manage.py', 'runserver', f'0.0.0.0:{port}'])
